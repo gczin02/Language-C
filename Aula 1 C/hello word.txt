@@ -1,0 +1,145 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello World");
+
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int main() {
+    int produtos_manha;
+    int produtos_noite;
+    int total;
+
+    printf("Quantos produtos recebidos de manha? ");
+    scanf("%d", &produtos_manha);
+
+    printf("Quantos produtos recebidos de noite? ");
+    scanf("%d", &produtos_noite);
+
+    total = produtos_manha + produtos_noite;
+
+    printf("Total de produtos recebidos: %d\n", total);
+
+    return 0;
+}
+
+
+
+#include <stdio.h>
+#include <math.h>
+
+float conversao, hora, minuto;
+
+int main (void){
+    printf("Digite o tempo em horas: ");
+    scanf("%f", &hora);
+    printf("Digite os minutos: ");
+    scanf("%f", &minuto);
+    conversao = hora * 60 + minuto;
+    printf("Se passaram %.0f minutos desde o inicio do dia ", conversao);
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    float potencia, horas_dia, consumo;
+
+    printf("Potencia do equipamento (W): ");
+    scanf("%f", &potencia);
+
+    printf("Horas de uso por dia: ");
+    scanf("%f", &horas_dia);
+
+    consumo = (potencia * horas_dia * 30) / 1000;
+
+    printf("Consumo mensal: %.2f kWh\n", consumo);
+
+    return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    float peso, altura, imc;
+
+    printf("Digite seu peso em kg: ");
+    scanf("%f", &peso);
+
+    printf("Digite sua altura em metros: ");
+    scanf("%f", &altura);
+
+    imc = peso / (altura * altura);
+
+    printf("\nSeu IMC e: %.2f\n", imc);
+
+    if (imc < 18.5) {
+        printf("Classificacao: Abaixo do peso\n");
+    } else if (imc < 25.0) {
+        printf("Classificacao: Peso normal\n");
+    } else if (imc < 30.0) {
+        printf("Classificacao: Sobrepeso\n");
+    } else {
+        printf("Classificacao: Obesidade\n");
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float largura, comprimento, valorCaixa;
+    float area;
+    int quantidadeCaixas;
+    float custoTotal;
+
+    printf("Qual e a largura da area (em metros)? ");
+    scanf("%f", &largura);
+
+    printf("Qual e o comprimento da area (em metros)? ");
+    scanf("%f", &comprimento);
+
+    printf("Qual e o valor de cada caixa? ");
+    scanf("%f", &valorCaixa);
+
+    area = largura * comprimento;
+
+    quantidadeCaixas = (int)ceil(area / 2.5);
+
+    custoTotal = quantidadeCaixas * valorCaixa;
+
+    printf("\nArea total a ser revestida: %.2f m2\n", area);
+    printf("Quantidade de caixas necessarias: %d\n", quantidadeCaixas);
+    printf("Custo total da compra: R$ %.2f\n", custoTotal);
+
+    return 0;
+}
+  
